@@ -188,6 +188,21 @@ a {
 .navbar {
 	display: flex;
 	padding: 0 !important;
+	box-shadow: 0 0.05rem 0.2rem rgb(0 0 0 / 15%);
+}
+
+@media screen and (max-width: 768px) {
+	.sidebar {
+		display: none;
+	}
+	
+	.navbar .control-label {
+		display: none;
+	}
+	
+	.navbar .search-box {
+		display: none !important;
+	}
 }
 
 .navbar a {
