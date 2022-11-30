@@ -3,6 +3,7 @@ import Head from 'next/head'
 import SideBar from './../components/common/sidebar'
 import NavBar from './../components/common/navbar'
 import Image from 'next/image'
+import DataGrid from './../components/controls/data-grid'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -17,7 +18,14 @@ const Home: NextPage = () => {
 
 		<div className="content_layout">
 		<SideBar></SideBar>
-		<NavBar></NavBar>
+		
+			<div className="body">
+				<NavBar></NavBar>
+				
+				<div className="content">
+					<DataGrid></DataGrid>
+				</div>
+			</div>
 		</div>
 			
       <main className={styles.main}>
