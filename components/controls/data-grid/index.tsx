@@ -4,9 +4,9 @@ const DataGrid = () => (
 <div>
 	<div className="data-grid-tools">
 		<div className="tool-block">
-			<div className="tool">
-			
-			</div>
+				<div className="tool-left">
+					<button className="tool-button"><img src="./icons/cogs.png" /></button> <span className="data-grid-name">Пользователи</span>
+				</div>
 		</div>
 		<div className="tool-block">
 			<div className="tool">
@@ -49,7 +49,7 @@ const DataGrid = () => (
 				</td>
 			</tr>
 		
-			<tr>
+			<tr className="whitesmoke-row">
 			<td className="cell">+</td>
 				<td className="cell">Номер</td>
 				<td className="cell">Название</td>
@@ -91,6 +91,21 @@ const DataGrid = () => (
 		</tr>
 		</tbody>
 	</table>
+	<div className="data-grid-footer">
+			<div className="footer-tools">
+				<div className="paginator">
+					<button className="page-button"><img src="./icons/first.png" /></button>
+					<button className="page-button"><img src="./icons/prev.png" /></button>
+					<button className="page-button">1</button>
+					<button className="page-button">2</button>
+					<button className="page-button">...</button>
+					<button className="page-button">8</button>
+					<button className="page-button">10</button>
+					<button className="page-button"><img src="./icons/next.png" /></button>
+					<button className="page-button"><img src="./icons/last.png" /></button>
+				</div>
+			</div>
+		</div>
 	</div>
 )
 

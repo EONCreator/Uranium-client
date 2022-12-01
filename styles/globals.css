@@ -308,6 +308,17 @@ a {
 
 .data-grid-tools .tool-block {
 	display: flex;
+	align-items: center;
+}
+
+.data-grid-tools .tool-block .tool-left {
+	display: flex;
+	align-items: center;
+	margin-right: 8px;
+}
+
+.data-grid-tools .tool-block .tool-left .tool-button {
+	border: none;
 }
 
 .data-grid-tools .tool-block .tool {
@@ -327,10 +338,16 @@ a {
 	max-width: 100%;
 }
 
+.data-grid-name {
+	margin-left: 7px;
+	font-weight: 500;
+}
+
 .data-grid {
 	border-left: 1px solid #e6e6e6;
 	border-top: 2px solid #acafff;
 	width: 100%;
+	color: #3f3f3f;
 }
 
 .data-grid td {
@@ -341,13 +358,27 @@ a {
 }
 
 .data-grid .header {
-  width: auto;
+	width: auto;
 	background: #f9f9f9;
 	border-bottom: 1.1px solid whitesmoke !important;
+	font-weight: 500;
+	font-size: 15.5px;
+}
+
+.data-grid tbody {
+	font-size: 14px;
+}
+
+.data-grid tbody td {
+	padding: 5px 8px;
 }
 
 .data-grid .header .actions-column {
 	width: 103px !important;
+}
+
+.data-grid .whitesmoke-row {
+	background: #f9f9f9;
 }
 
 .data-grid .header .cell {
@@ -405,4 +436,45 @@ a {
 
 .data-grid .relationShip .content {
 	display: flex;
+}
+
+
+/*DataGrid footer*/
+
+.data-grid-footer {
+	width: 100%;
+	padding: 5px 0;
+}
+
+.data-grid-footer .footer-tools {
+	display: flex;
+	justify-content: end;
+}
+
+.paginator {
+	display: flex;
+}
+
+.paginator .page-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 3px;
+	background: white;
+	border: 1px solid #a0a0a0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+	font-size: 14.3px;
+    color: #252525;
+}
+
+.paginator .page-button img {
+	max-width: 100%;
+}
+
+.paginator .page-button:hover {
+	background: #6087ff;
+	border-color: #6087ff;
+	color: whitesmoke;
 }
